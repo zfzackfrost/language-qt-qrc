@@ -1,19 +1,18 @@
 {
-  "name": "language-xml",
+  "name": "language-qt-qrc",
   "version": "0.35.2",
-  "description": "XML language support in Atom",
+  "description": "Qt Resource Collection language support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
   },
-  "homepage": "http://atom.github.io/language-xml",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-xml.git"
+    "url": "https://github.com/zfzackfrost/language-qt-qrc.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-xml/issues"
+    "url": "https://github.com/zfzackfrost/language-qt-qrc/pulls"
   },
   "devDependencies": {
     "coffeelint": "^1.10.1"

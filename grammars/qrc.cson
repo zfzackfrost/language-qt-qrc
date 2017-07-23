@@ -1,83 +1,7 @@
-'scopeName': 'text.xml'
-'name': 'XML'
+'scopeName': 'text.qrc'
+'name': 'Qt Resource Collection'
 'fileTypes': [
-  'aiml'
-  'atom'
-  'axml'
-  'bpmn'
-  'config'
-  'cpt'
-  'csl'
-  'csproj'
-  'csproj.user'
-  'dae'
-  'dia'
-  'dita'
-  'ditamap'
-  'dtml'
-  'fodg'
-  'fodp'
-  'fods'
-  'fodt'
-  'fsproj'
-  'fxml'
-  'gir'
-  'glade'
-  'gpx'
-  'graphml'
-  'icls'
-  'iml'
-  'isml'
-  'jmx'
-  'jsp'
-  'kst'
-  'launch'
-  'menu'
-  'mxml'
-  'nuspec'
-  'opml'
-  'owl'
-  'pom'
-  'ppj'
-  'proj'
-  'pt'
-  'pubxml'
-  'pubxml.user'
-  'rdf'
-  'rng'
-  'rss'
-  'sdf'
-  'shproj'
-  'siml'
-  'sld'
-  'storyboard'
-  'svg'
-  'targets'
-  'tld'
-  'vbox'
-  'vbox-prev'
-  'vbproj'
-  'vbproj.user'
-  'vcproj'
-  'vcproj.filters'
-  'vcxproj'
-  'vcxproj.filters'
-  'wixmsp'
-  'wixmst'
-  'wixobj'
-  'wixout'
-  'wsdl'
-  'wxs'
-  'xaml'
-  'xbl'
-  'xib'
-  'xlf'
-  'xliff'
-  'xml'
-  'xpdl'
-  'xsd'
-  'xul'
-  'ui'
+	'qrc'
 ]
 'firstLineMatch': '''(?x)
   # XML declaration
@@ -133,15 +57,15 @@
     'begin': '(<\\?)\\s*([-_a-zA-Z0-9]+)'
     'captures':
       '1':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '2':
-        'name': 'entity.name.tag.xml'
+        'name': 'entity.name.tag.qrc'
     'end': '(\\?>)'
-    'name': 'meta.tag.preprocessor.xml'
+    'name': 'meta.tag.preprocessor.qrc'
     'patterns': [
       {
         'match': ' ([a-zA-Z-]+)'
-        'name': 'entity.other.attribute-name.xml'
+        'name': 'entity.other.attribute-name.qrc'
       }
       {
         'include': '#doublequotedString'
@@ -155,13 +79,13 @@
     'begin': '(<!)(DOCTYPE)\\s+([:a-zA-Z_][:a-zA-Z0-9_.-]*)'
     'captures':
       '1':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '2':
-        'name': 'keyword.other.doctype.xml'
+        'name': 'keyword.other.doctype.qrc'
       '3':
-        'name': 'variable.language.documentroot.xml'
+        'name': 'variable.language.documentroot.qrc'
     'end': '\\s*(>)'
-    'name': 'meta.tag.sgml.doctype.xml'
+    'name': 'meta.tag.sgml.doctype.qrc'
     'patterns': [
       {
         'include': '#internalSubset'
@@ -175,32 +99,32 @@
     'begin': '(<)((?:([-_a-zA-Z0-9]+)(:))?([-_a-zA-Z0-9:]+))(?=(\\s[^>]*)?></\\2>)'
     'beginCaptures':
       '1':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '2':
-        'name': 'entity.name.tag.xml'
+        'name': 'entity.name.tag.qrc'
       '3':
-        'name': 'entity.name.tag.namespace.xml'
+        'name': 'entity.name.tag.namespace.qrc'
       '4':
-        'name': 'punctuation.separator.namespace.xml'
+        'name': 'punctuation.separator.namespace.qrc'
       '5':
-        'name': 'entity.name.tag.localname.xml'
+        'name': 'entity.name.tag.localname.qrc'
     'end': '(>)(</)((?:([-_a-zA-Z0-9]+)(:))?([-_a-zA-Z0-9:]+))(>)'
     'endCaptures':
       '1':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '2':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '3':
-        'name': 'entity.name.tag.xml'
+        'name': 'entity.name.tag.qrc'
       '4':
-        'name': 'entity.name.tag.namespace.xml'
+        'name': 'entity.name.tag.namespace.qrc'
       '5':
-        'name': 'punctuation.separator.namespace.xml'
+        'name': 'punctuation.separator.namespace.qrc'
       '6':
-        'name': 'entity.name.tag.localname.xml'
+        'name': 'entity.name.tag.localname.qrc'
       '7':
-        'name': 'punctuation.definition.tag.xml'
-    'name': 'meta.tag.no-content.xml'
+        'name': 'punctuation.definition.tag.qrc'
+    'name': 'meta.tag.no-content.qrc'
     'patterns': [
       {
         'include': '#tagStuff'
@@ -211,17 +135,17 @@
     'begin': '(</?)(?:([-\\w\\.]+)((:)))?([-\\w\\.:]+)'
     'captures':
       '1':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '2':
-        'name': 'entity.name.tag.namespace.xml'
+        'name': 'entity.name.tag.namespace.qrc'
       '3':
-        'name': 'entity.name.tag.xml'
+        'name': 'entity.name.tag.qrc'
       '4':
-        'name': 'punctuation.separator.namespace.xml'
+        'name': 'punctuation.separator.namespace.qrc'
       '5':
-        'name': 'entity.name.tag.localname.xml'
+        'name': 'entity.name.tag.localname.qrc'
     'end': '(/?>)'
-    'name': 'meta.tag.xml'
+    'name': 'meta.tag.qrc'
     'patterns': [
       {
         'include': '#tagStuff'
@@ -238,16 +162,16 @@
     'begin': '<%@'
     'beginCaptures':
       '0':
-        'name': 'punctuation.section.embedded.begin.xml'
+        'name': 'punctuation.section.embedded.begin.qrc'
     'end': '%>'
     'endCaptures':
       '0':
-        'name': 'punctuation.section.embedded.end.xml'
-    'name': 'source.java-props.embedded.xml'
+        'name': 'punctuation.section.embedded.end.qrc'
+    'name': 'source.java-props.embedded.qrc'
     'patterns': [
       {
         'match': 'page|include|taglib'
-        'name': 'keyword.other.page-props.xml'
+        'name': 'keyword.other.page-props.qrc'
       }
     ]
   }
@@ -255,12 +179,12 @@
     'begin': '<%[!=]?(?!--)'
     'beginCaptures':
       '0':
-        'name': 'punctuation.section.embedded.begin.xml'
+        'name': 'punctuation.section.embedded.begin.qrc'
     'end': '(?!--)%>'
     'endCaptures':
       '0':
-        'name': 'punctuation.section.embedded.end.xml'
-    'name': 'source.java.embedded.xml'
+        'name': 'punctuation.section.embedded.end.qrc'
+    'name': 'source.java.embedded.qrc'
     'patterns': [
       {
         'include': 'source.java'
@@ -271,12 +195,12 @@
     'begin': '<!\\[CDATA\\['
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.xml'
+        'name': 'punctuation.definition.string.begin.qrc'
     'end': ']]>'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.xml'
-    'name': 'string.unquoted.cdata.xml'
+        'name': 'punctuation.definition.string.end.qrc'
+    'name': 'string.unquoted.cdata.qrc'
   }
 ]
 'repository':
@@ -284,15 +208,15 @@
     'begin': '(<!)(ENTITY)\\s+(%\\s+)?([:a-zA-Z_][:a-zA-Z0-9_.-]*)(\\s+(?:SYSTEM|PUBLIC)\\s+)?'
     'captures':
       '1':
-        'name': 'punctuation.definition.tag.xml'
+        'name': 'punctuation.definition.tag.qrc'
       '2':
-        'name': 'keyword.other.entity.xml'
+        'name': 'keyword.other.entity.qrc'
       '3':
-        'name': 'punctuation.definition.entity.xml'
+        'name': 'punctuation.definition.entity.qrc'
       '4':
-        'name': 'variable.language.entity.xml'
+        'name': 'variable.language.entity.qrc'
       '5':
-        'name': 'keyword.other.entitytype.xml'
+        'name': 'keyword.other.entitytype.qrc'
     'end': '(>)'
     'patterns': [
       {
@@ -304,17 +228,17 @@
     ]
   'bare-ampersand':
     'match': '&'
-    'name': 'invalid.illegal.bad-ampersand.xml'
+    'name': 'invalid.illegal.bad-ampersand.qrc'
   'doublequotedString':
     'begin': '"'
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.xml'
+        'name': 'punctuation.definition.string.begin.qrc'
     'end': '"'
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.xml'
-    'name': 'string.quoted.double.xml'
+        'name': 'punctuation.definition.string.end.qrc'
+    'name': 'string.quoted.double.qrc'
     'patterns': [
       {
         'include': '#entity'
@@ -326,18 +250,18 @@
   'entity':
     'captures':
       '1':
-        'name': 'punctuation.definition.constant.xml'
+        'name': 'punctuation.definition.constant.qrc'
       '3':
-        'name': 'punctuation.definition.constant.xml'
+        'name': 'punctuation.definition.constant.qrc'
     'match': '(&)([:a-zA-Z_][:a-zA-Z0-9_.-]*|#[0-9]+|#x[0-9a-fA-F]+)(;)'
-    'name': 'constant.character.entity.xml'
+    'name': 'constant.character.entity.qrc'
   'internalSubset':
     'begin': '(\\[)'
     'captures':
       '1':
-        'name': 'punctuation.definition.constant.xml'
+        'name': 'punctuation.definition.constant.qrc'
     'end': '(\\])'
-    'name': 'meta.internalsubset.xml'
+    'name': 'meta.internalsubset.qrc'
     'patterns': [
       {
         'include': '#EntityDecl'
@@ -352,21 +276,21 @@
   'parameterEntity':
     'captures':
       '1':
-        'name': 'punctuation.definition.constant.xml'
+        'name': 'punctuation.definition.constant.qrc'
       '3':
-        'name': 'punctuation.definition.constant.xml'
+        'name': 'punctuation.definition.constant.qrc'
     'match': '(%)([:a-zA-Z_][:a-zA-Z0-9_.-]*)(;)'
-    'name': 'constant.character.parameter-entity.xml'
+    'name': 'constant.character.parameter-entity.qrc'
   'singlequotedString':
     'begin': '\''
     'beginCaptures':
       '0':
-        'name': 'punctuation.definition.string.begin.xml'
+        'name': 'punctuation.definition.string.begin.qrc'
     'end': '\''
     'endCaptures':
       '0':
-        'name': 'punctuation.definition.string.end.xml'
-    'name': 'string.quoted.single.xml'
+        'name': 'punctuation.definition.string.end.qrc'
+    'name': 'string.quoted.single.qrc'
     'patterns': [
       {
         'include': '#entity'
@@ -380,13 +304,13 @@
       {
         'captures':
           '1':
-            'name': 'entity.other.attribute-name.namespace.xml'
+            'name': 'entity.other.attribute-name.namespace.qrc'
           '2':
-            'name': 'entity.other.attribute-name.xml'
+            'name': 'entity.other.attribute-name.qrc'
           '3':
-            'name': 'punctuation.separator.namespace.xml'
+            'name': 'punctuation.separator.namespace.qrc'
           '4':
-            'name': 'entity.other.attribute-name.localname.xml'
+            'name': 'entity.other.attribute-name.localname.qrc'
         'match': '(?:^|\\s+)(?:([-\\w.]+)((:)))?([-\\w.:]+)\\s*='
       }
       {
@@ -400,6 +324,6 @@
     'begin': '<[!%]--'
     'captures':
       '0':
-        'name': 'punctuation.definition.comment.xml'
+        'name': 'punctuation.definition.comment.qrc'
     'end': '--%?>'
-    'name': 'comment.block.xml'
+    'name': 'comment.block.qrc'
