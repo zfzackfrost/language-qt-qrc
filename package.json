@@ -1,6 +1,6 @@
 {
   "name": "language-qt-qrc",
-  "version": "0.35.2",
+  "version": "0.0.0",
   "description": "Qt Resource Collection language support in Atom",
   "engines": {
     "atom": "*",
